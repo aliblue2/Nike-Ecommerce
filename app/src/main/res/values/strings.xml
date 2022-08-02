@@ -1,0 +1,86 @@
+<resources>
+    <string name="app_name">NikeIran</string>
+    <string name="String_HomeBottomNav">خانه</string>
+    <string name="String_CartBottomNav">سبد خرید </string>
+    <string name="addToCart">افزودن به سبد خرید </string>
+    <string name="pay">پرداخت</string>
+    <string name="String_ProfileBottomNav">پروفایل</string>
+    <string name="lastest">جدید ترین ها</string>
+    <string name="expensive">گران ترین ها</string>
+    <string name="poor">ارزان ترین ها</string>
+    <string name="popular">محبوب ترین ها</string>
+    <string name="cartEmptyState">وارد حساب کاربری شوید</string>
+    <string name="loginScreenTittle">ورود به حساب کاربری</string>
+    <string name="loginHint">حساب کاربری دارید؟</string>
+    <string name="loginTittle">ورود</string>
+    <string name="loginSuccess">با موفیقت وارد شدی!</string>
+    <string name="signupScreenTittle">ثبت نام در فروشگاه</string>
+    <string name="signupHint">حساب کاربری ندارید؟</string>
+    <string name="email">ایمیل</string>
+    <string name="password">رمز عبور</string>
+    <string name="signup">ثبت نام</string>
+    <string name="cartRegister">ثبت نام یا ورود</string>
+    <string name="usernameOrEmail">یوزرنیم یا ایمیل </string>
+    <string name="filter">مرتب سازی</string>
+    <string name="viewAll">مشاهده همه</string>
+    <string name="InsertComment">ثبت نظر جدید</string>
+    <string name="viewAllComments">مشاهده همه نظرات</string>
+    <string name="Comments"> همه نظرات</string>
+    <string name="ProductList"> لیست محصولات</string>
+    <string name="addToFavorite"> به علاقه مندی ها اضافه شد</string>
+    <string name="deleteFromFavorite"> از علاقه مندی ها حذف شد</string>
+    <string name="unknown_error">خطای نامشخص</string>
+    <string name="errorAuth">لطفا وارد حساب کاربری خود شوید</string>
+    <string name="successToAddCart">با موفقیت به سبد خرید اضافه شد</string>
+    <string name="successSignUp">با موفیقت ثبت نام شدی</string>
+    <string name="inputEmailAndPassword">ایمیل و رمز عبور خود را وارد کنید</string>
+    <array name="sortTitlesArray">
+        <item>@string/lastest</item>
+        <item>@string/popular</item>
+        <item>@string/expensive</item>
+        <item>@string/poor</item>
+    </array>
+    <string name="deleteFromCart">حذف از سبد خرید</string>
+    <string name="tittlePurchaseDetail">جزئیات خرید</string>
+    <string name="totalPricePurchaseDetail">مبلغ کل خرید</string>
+    <string name="payablePricePurchaseDetail">مبلغ قابل پرداخت</string>
+    <string name="percentPricePurchaseDetail">تخفیف خرید</string>
+    <string name="shipingCostPurchaseDetail">هزینه ارسال</string>
+    <string name="SuccessRemoveCart">با موفقیت از سبد خرید حذف شد</string>
+
+    <string name="cartEmptyStateLoginRequired">وارد حساب کاربری خود شوید</string>
+    <string name="cartEmptyStateCallToAction">ورود به حساب کاربری</string>
+    <string name="cartEmptyStateDefault">هیچ خبری اینجا نیست</string>
+    <string name="cartEmptyStateSeeAllproducts">مشاهده همه محصولات</string>
+
+    <string name="ShippingTittle">انتخاب تحویل گیرنده و شیوه پرداخت</string>
+    <string name="ShippingFirstName">نام</string>
+    <string name="ShippingLastName">نام خانوادگی</string>
+    <string name="ShippingZipCode">کد پستی</string>
+    <string name="ShippingNumber">شماره تماس</string>
+    <string name="ShippingAddress">آدرس تحویل گیرنده</string>
+    <string name="payOnline">پرداخت اینترنتی</string>
+    <string name="payOnPlace">پرداخت در محل</string>
+
+
+    <string name="successPurchaseTittle">خرید با موفقیت انجام شد</string>
+    <string name="successPurchase">پرداخت موفق</string>
+    <string name="unSuccessPurchase">خرید ناموفق</string>
+    <string name="CheckOutTittle">رسید پرداخت</string>
+
+    <string name="backOnHomeFr">بازگشت به صفحه اصلی</string>
+    <string name="orderDetail">سوابق سفارش</string>
+
+    <string name="favoriteList">علاقه مندی ها</string>
+    <string name="orderHistory">سوابق سفارش</string>
+    <string name="signOut">خروج از حساب کاربری</string>
+    <string name="signIn">ورود به حساب کاربری</string>
+    <string name="guest_user">کاربر مهمان</string>
+
+
+    <string name="orderItemTitle">شناسه سفارش</string>
+    <string name="orderItemPrice">مبلغ</string>
+    <string name="orderItemProducts">محصولات سفارش</string>
+    <string name="orderHistoryEmpty">تا به حال سفارشی ثبت نکرده اید</string>
+
+</resources>

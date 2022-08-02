@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layoutDirection="rtl"
+    app:cardElevation="2dp"
+    android:layout_height="240dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.alireza.nikeiran.view.NikeImageView
+            android:id="@+id/cartProductIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="12dp"
+            app:roundedCornerRadius="12dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cartTittleItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:minLines="1"
+            android:maxLength="25"
+            android:textAppearance="@style/TextAppearance.Nike.Headline6"
+            app:layout_constraintBottom_toBottomOf="@+id/cartProductIv"
+            app:layout_constraintEnd_toStartOf="@+id/cartProductIv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cartProductIv"
+            tools:text="کفش ورزشی مدل pegasus air zoom" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="تعداد"
+            android:textAppearance="@style/TextAppearance.Nike.Headline6"
+            app:layout_constraintEnd_toEndOf="@+id/cartProductIv"
+            app:layout_constraintStart_toStartOf="@+id/cartProductIv"
+            app:layout_constraintTop_toBottomOf="@+id/cartProductIv" />
+
+        <TextView
+            android:id="@+id/cartCountItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Nike.Headline5"
+            app:layout_constraintEnd_toEndOf="@+id/text"
+            app:layout_constraintStart_toStartOf="@+id/text"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            tools:text="4" />
+
+        <ProgressBar
+            android:id="@+id/progressCountCart"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/text"
+            android:layout_marginTop="1dp"
+            app:layout_constraintStart_toStartOf="@+id/text"
+            app:layout_constraintTop_toBottomOf="@+id/text"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/decreases_ic"
+            android:id="@+id/cartDecreaseItemIv"
+            app:layout_constraintBottom_toBottomOf="@+id/cartCountItemTv"
+            app:layout_constraintStart_toEndOf="@+id/cartCountItemTv"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toTopOf="@+id/cartCountItemTv" />
+
+        <ImageView
+            android:id="@+id/cartIncreaseItemIv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/increase_ic"
+            app:layout_constraintBottom_toBottomOf="@+id/cartCountItemTv"
+            app:layout_constraintEnd_toStartOf="@+id/cartCountItemTv"
+            app:layout_constraintTop_toTopOf="@+id/cartCountItemTv" />
+
+
+        <TextView
+            android:id="@+id/cartPreviousPriceItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="34dp"
+            android:textAppearance="@style/TextAppearance.Nike.Body1"
+            android:textColor="@color/red"
+            app:layout_constraintBottom_toBottomOf="@+id/text"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="1430000 تومان" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/percent"
+            app:layout_constraintBottom_toBottomOf="@+id/text"
+            app:layout_constraintEnd_toStartOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:text="تخفیف"
+            android:textAppearance="@style/TextAppearance.Nike.Body1"
+            android:textColor="@color/red"
+            app:layout_constraintEnd_toStartOf="@+id/cartPreviousPriceItemTv"
+            app:layout_constraintTop_toTopOf="@+id/cartPreviousPriceItemTv" />
+
+        <TextView
+            android:id="@+id/cartPriceItemTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/TextAppearance.Nike.Body1"
+            app:layout_constraintEnd_toEndOf="@+id/cartPreviousPriceItemTv"
+            app:layout_constraintStart_toStartOf="@+id/cartPreviousPriceItemTv"
+            app:layout_constraintTop_toBottomOf="@+id/cartPreviousPriceItemTv"
+            tools:text="1430000 تومان" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="?dividerColor"
+            android:id="@+id/view"
+            app:layout_constraintBottom_toTopOf="@+id/deleteFromCart"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cartCountItemTv" />
+
+        <FrameLayout
+            android:id="@+id/deleteFromCart"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="?selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/deleteFromCart"
+                android:textAppearance="@style/TextAppearance.Nike.Headline6" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

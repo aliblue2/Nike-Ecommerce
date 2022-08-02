@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="4dp"
+    android:layout_marginBottom="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="4dp"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+
+        <com.alireza.nikeiran.view.NikeImageView
+            android:id="@+id/imageProductIv"
+            android:layout_width="176dp"
+            android:layout_height="156dp"
+            android:layout_margin="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:placeholderImage="@drawable/ic_nike_logo"
+            app:roundedCornerRadius="12dp" />
+
+        <TextView
+            android:id="@+id/tittleProductTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="start"
+            android:maxLength="25"
+            android:maxLines="2"
+            android:layout_marginTop="24dp"
+            android:minLines="2"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintStart_toEndOf="@+id/imageProductIv"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/viewAllComments" />
+
+        <TextView
+            android:id="@+id/previousPriceProductTv"
+            android:layout_width="80dp"
+            android:layout_height="18dp"
+            android:layout_margin="12dp"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            android:textColor="?android:textColorSecondary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tittleProductTv"
+            tools:text="@string/lastest" />
+
+        <TextView
+            android:id="@+id/priceProductTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+            app:layout_constraintEnd_toEndOf="@+id/previousPriceProductTv"
+            app:layout_constraintTop_toBottomOf="@+id/previousPriceProductTv"
+            tools:text="@string/lastest" />
+
+        <ImageView
+            android:id="@+id/favoriteButton"
+            android:scaleType="centerInside"
+            android:background="@drawable/bac_favorite_ic"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="@id/imageProductIv"
+            app:layout_constraintTop_toTopOf="@id/imageProductIv"
+            app:srcCompat="@drawable/ic_favorites" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

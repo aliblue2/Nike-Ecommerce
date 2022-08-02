@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_bottom"
+    app:startDestination="@id/mainFr">
+
+    <fragment
+        android:id="@+id/profileFr"
+        tools:layout="@layout/fragment_profile"
+        android:name="com.alireza.nikeiran.feature.profile.ProfileFragment"
+        android:label="NikeFragment" />
+    <fragment
+        android:id="@+id/cartFr"
+        tools:layout="@layout/fragment_cart"
+        android:name="com.alireza.nikeiran.feature.cart.CartFragment"
+        android:label="CartFragment" />
+    <fragment
+        android:id="@+id/mainFr"
+        tools:layout="@layout/fragment_main"
+        android:name="com.alireza.nikeiran.feature.home.HomeFragment"
+        android:label="MainFragment" />
+</navigation>

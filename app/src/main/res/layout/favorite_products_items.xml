@@ -1,0 +1,39 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="2dp"
+    android:layoutDirection="rtl"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        android:orientation="horizontal">
+        <com.alireza.nikeiran.view.NikeImageView
+            android:id="@+id/imageProductFavoriteIv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="4dp"
+            app:placeholderImage="@drawable/ic_nike_logo"
+            app:roundedCornerRadius="12dp" />
+
+        <TextView
+            android:id="@+id/tittleProductFavoriteTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:ellipsize="start"
+            android:layout_gravity="center_vertical"
+            android:maxLength="25"
+            android:maxLines="2"
+            android:textSize="16sp"
+            android:minLines="2"
+            android:textAppearance="@style/TextAppearance.Nike.Body1"
+            tools:text="@string/viewAllComments" />
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

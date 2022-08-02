@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Nike.Headline5"
+        android:text="@string/tittlePurchaseDetail"
+        android:layout_gravity="start"
+        android:layout_marginStart="12dp"
+        android:textColor="?android:textColorSecondary"
+        android:layout_marginTop="24dp"
+        />
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+
+        app:cardElevation="2dp"
+        app:cardCornerRadius="12dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"
+                    android:text="@string/totalPricePurchaseDetail"
+                    android:layout_gravity="center_vertical|start"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/totalPricePurchaseDetail"
+                    tools:text="8918000 هزار تومان"
+                    android:layout_gravity="center_vertical|end"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?dividerColor"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"
+                    android:text="@string/shipingCostPurchaseDetail"
+                    android:layout_gravity="center_vertical|start"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8918000 هزار تومان"
+                    android:id="@+id/shipingCostPurchaseDetail"
+                    android:layout_gravity="center_vertical|end"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"/>
+            </FrameLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?dividerColor"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:paddingEnd="12dp"
+                android:paddingStart="12dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"
+                    android:text="@string/payablePricePurchaseDetail"
+                    android:layout_gravity="center_vertical|start"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="8918000 هزار تومان"
+                    android:id="@+id/payablePricePurchaseDetail"
+                    android:layout_gravity="center_vertical|end"
+                    android:textAppearance="@style/TextAppearance.Nike.Headline6"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    android:background="?windowBackgroundColorSub"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature.profile.ProfileFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorOnPrimary"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.Nike.Headline6"
+                android:text="@string/String_CartBottomNav"
+                android:layout_gravity="center"
+                />
+        </FrameLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:clipToPadding="false"
+        android:layout_height="match_parent"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:paddingTop="12dp"
+        android:id="@+id/cartItemrv"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"/>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/pay"
+        android:layout_gravity="bottom"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.Nike.Headline6"
+        android:paddingStart="12dp"
+        android:textColor="?colorOnPrimary"
+        android:layout_marginBottom="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:id="@+id/payCheckOutBtn"
+        app:backgroundTint="?colorPrimary"
+        android:paddingEnd="12dp"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?dividerColor"
+    android:layoutDirection="rtl"
+    tools:context=".feature.main.product.comment.CommentListActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="?colorOnPrimary"
+        android:layout_height="wrap_content">
+        <com.alireza.nikeiran.view.scrool.NikeToolbar
+            android:layout_width="match_parent"
+            app:nt_title="@string/Comments"
+            android:id="@+id/toolbarComments"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:tint="?colorPrimary"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_round_insert_comment_24"
+                android:layout_gravity="center_vertical|end"/>
+
+        </com.alireza.nikeiran.view.scrool.NikeToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bacground_comments_items"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            android:id="@+id/rvCommentsAll"
+            android:paddingBottom="12dp"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:id="@+id/insertCommentBtn"
+        android:layout_marginBottom="12dp"
+        android:src="@drawable/ic_round_insert_comment_24"
+        app:tint="?colorOnPrimary"
+        app:fabCustomSize="65dp"
+        app:backgroundTint="?colorPrimary"
+        android:layout_gravity="bottom"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

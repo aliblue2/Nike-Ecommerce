@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alireza.nikeiran.view.NikeImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    app:viewAspectRatio="0.93"
+    app:placeholderImage="@drawable/ic_nike_logo"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:roundedCornerRadius="12dp"
+    >
+
+</com.alireza.nikeiran.view.NikeImageView>

@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.NikeIran" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="dividerColor">@color/gray</item>
+        <item name="android:textColorSecondary">@color/darkgray</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/white</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="fontFamily">@font/iransans_regular</item>
+        <!-- Customize your theme here. -->
+        <item name="textAppearanceHeadline1">@style/TextAppearance.Nike.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.Nike.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.Nike.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.Nike.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.Nike.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.Nike.Headline6</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.Nike.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.Nike.Body2</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.Nike.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.Nike.Subtitle2</item>
+        <item name="textAppearanceButton">@style/TextAppearance.Nike.Button</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.Nike.Caption</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.Nike.Overline</item>
+        <item name="bottomNavigationStyle">@style/myBottomnavigation</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="windowBackgroundColorSub">#f5f5f5</item>
+    </style>
+
+    <style name="NikeThemeAuth" parent="Theme.NikeIran">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+        <item name="android:windowBackground">@color/blue</item>
+        <item name="materialButtonStyle">@style/NikeThemeAuthButton</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="snackbarStyle">@style/Theme.NikeIran</item>
+    </style>
+
+    <style name="ThemeNikeSplash" parent="Theme.NikeIran">
+        <item name="android:statusBarColor">@color/blue</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="ProfileLinks">
+        <item name="android:drawablePadding">12dp</item>
+        <item name="minHeight">46dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="paddingStart">16dp</item>
+        <item name="background">?selectableItemBackground</item>
+        <item name="android:textAppearance">@style/TextAppearance.Nike.Headline6</item>
+    </style>
+
+    <style name="Avatar">
+        <item name="cornerSize">25%</item>
+    </style>
+</resources>

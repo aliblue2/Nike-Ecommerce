@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layoutDirection="rtl"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".feature.profile.ProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:background="@drawable/bachground_profile"
+        >
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:padding="10dp"
+                app:strokeWidth="5dp"
+                android:layout_marginTop="50dp"
+                app:strokeColor="?colorOnPrimary"
+                app:shapeAppearance="@style/Avatar"
+                android:src="@drawable/person_avatar"
+                android:scaleType="centerInside"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textColor="?colorOnPrimary"
+            android:id="@+id/usernameTv"
+            android:textAppearance="@style/TextAppearance.Nike.Headline5"
+            tools:text="کاربر میهمان"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
+            android:paddingStart="12dp"
+            android:orientation="vertical"
+            android:paddingEnd="12dp"
+            android:background="@drawable/background_profile_menu">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ProfileLinks"
+                android:text="@string/favoriteList"
+                android:id="@+id/favoriteListTv"
+                app:drawableStartCompat="@drawable/ic_favorite_border"
+                app:drawableEndCompat="@drawable/ic_round_keyboard_arrow_left_24" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?dividerColor"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderHistoryTv"
+                style="@style/ProfileLinks"
+                android:layout_marginTop="12dp"
+                android:text="@string/orderHistory"
+                app:drawableStartCompat="@drawable/ic_archive_main"
+                app:drawableEndCompat="@drawable/ic_round_keyboard_arrow_left_24" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="?dividerColor"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginTop="12dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="12dp"
+                android:id="@+id/signInTv"
+                android:layout_height="wrap_content"
+                style="@style/ProfileLinks"
+                android:text="@string/signOut"
+                app:drawableStartCompat="@drawable/ic_key"
+                app:drawableEndCompat="@drawable/ic_round_keyboard_arrow_left_24" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

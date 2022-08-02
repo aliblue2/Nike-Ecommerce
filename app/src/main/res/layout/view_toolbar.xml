@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layoutDirection="rtl"
+    android:layout_height="56dp">
+
+    <ImageView
+        android:layout_marginStart="12dp"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="?selectableItemBackgroundBorderless"
+        android:id="@+id/btnBack"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_back"
+        android:layout_gravity="center_vertical|start"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTitleToolbar"
+        android:textAppearance="@style/TextAppearance.Nike.Headline6"
+        tools:text="همه نظرات کاربران"
+        android:layout_gravity="center_vertical|start"
+        android:layout_marginStart="46dp"/>
+</FrameLayout>
